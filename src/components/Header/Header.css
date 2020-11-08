@@ -1,0 +1,7 @@
+.navLink a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+.navLink a:hover{
+    text-decoration: none;
+}

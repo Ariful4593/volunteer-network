@@ -1,0 +1,46 @@
+.main-card a:hover{
+    text-decoration: none;
+    color: orange;
+}
+.main-card a{
+    color: white;
+    font-weight: 700;
+}
+@media screen and (max-width: 335px) {
+    .main-card {
+      border-radius: 10px 10x 10px 10x;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .main-card {
+      border-radius: 20px 20px 10px 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-card {
+      border-radius: 20px 20px 10px 10px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .main-card {
+      border-radius: 20px 20px 10px 10px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .container h3 {
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 301px) {
+    .container h3 {
+      font-size: 30px;
+    }
+  }
+  @media screen and (min-width: 472px) {
+    .container h3 {
+      font-size: 34px;
+    }
+  }

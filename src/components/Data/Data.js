@@ -1,0 +1,25 @@
+const Data = [
+    { id: 1, img: 'animalShelter.png', title: 'Foster a shelter animal', email: '',bgColor: '#651e1e' },
+    { id: 2, img: 'babySit.png', title: 'Baby sheet during PTA meetings' , email: '', bgColor: '#122670'},
+    { id: 3, img: 'birdHouse.png', title: 'Build birdhouse for your neighbors', email: '' , bgColor: '#493a3a'},
+    { id: 4, img: 'childSupport.png', title: 'Child Support', email: '' , bgColor: '#ad3535'},
+    { id: 5, img: 'cleanWater.png', title: 'Clean water for children', email: '' , bgColor: '#004eff'},
+    { id: 6, img: 'clearnPark.png', title: 'Clean up your local park', email: '' , bgColor: '#25cee9'},
+    { id: 7, img: 'clothSwap.png', title: 'Host a clothing swap', email: '' , bgColor: '#bcb5b5'},
+    { id: 8, img: 'driveSafety.png', title: 'Give a seminer on driving safety', email: '' , bgColor: '#d2bc1b'},
+    { id: 9, img: 'refuseShelter.png', title: 'Foster a shelter animal', email: '' , bgColor: '#cc3131'},
+    { id: 10, img: 'foodCharity.png', title: 'Food charity', email: '' , bgColor: '#122670'},
+    { id: 11, img: 'goodEducation.png', title: 'Good education', email: '' , bgColor: '#706767a6'},
+    { id: 12, img: 'ITHelp.png', title: 'Give IT help to local adults', email: '', bgColor: '#f16565' },
+    { id: 13, img: 'newBooks.png', title: 'Organize book at the library' , email: '', bgColor: '#572951'},
+    { id: 14, img: 'musicLessons.png', title: 'Give free music lessons', email: '' , bgColor: '#e55f5f'},
+    { id: 14, img: 'newBooks.png', title: 'New books for children', email: '' , bgColor: '#4c6568'},
+    { id: 15, img: 'refuseShelter.png', title: 'Refuge shelter', email: '', bgColor: '#b26e6ec4' },
+    { id: 16, img: 'riverClean.png', title: 'Host a river clean-up', email: '', bgColor: '#5f1f1f' },
+    { id: 17, img: 'schoolSuffiles.png', title: 'Collect school supplies', email: '' , bgColor: '#597b88'},
+    { id: 18, img: 'studyGroup.png', title: 'Host a study group' , email: '', bgColor: '#6a6a6a'},
+    { id: 19, img: 'stuffedAnimals.png', title: 'Stuffed animals', email: '' , bgColor: '#919191'},
+    { id: 20, img: 'voteRegister.png', title: 'Tech people how to register vote.', email: '' , bgColor: '#363a13e8'},
+];
+
+export default Data;

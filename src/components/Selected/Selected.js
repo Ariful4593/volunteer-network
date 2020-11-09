@@ -9,19 +9,21 @@ const Selected = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [selectedData, setSelectedData] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/volunteerSelectedInfo?email=${loggedInUser.email}`)
+        fetch(`https://ancient-retreat-90045.herokuapp.com/volunteerSelectedInfo?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setSelectedData(data))
     }, [])
 
     const deleteItem = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://ancient-retreat-90045.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(result => {
+                
                 console.log('deleted Succesfully')
             })
+            
 
     }
     return (

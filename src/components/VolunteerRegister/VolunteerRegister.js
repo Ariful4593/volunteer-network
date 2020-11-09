@@ -28,14 +28,14 @@ const VolunteerRegister = () => {
     const { cardId } = useParams();
     const [volunteerCardInfo, setVolunteerCardInfo] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/getDatabase')
+        fetch('https://ancient-retreat-90045.herokuapp.com/getDatabase')
             .then(res => res.json())
             .then(data => setVolunteerCardInfo(data))
     }, [])
     const { handleSubmit } = useForm();
     const history = useHistory()
     const onSubmit = data => {
-        fetch('http://localhost:4000/addVolunteer', {
+        fetch('https://ancient-retreat-90045.herokuapp.com/addVolunteer', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(selectedDate)
@@ -43,12 +43,12 @@ const VolunteerRegister = () => {
 
         const volCard = volunteerCardInfo.filter(data => data._id === cardId);
         volCard[0].email = loggedInUser.email
-        fetch(`http://localhost:4000/addVolunteerSelected?email=${loggedInUser.email}`, {
+        fetch(`https://ancient-retreat-90045.herokuapp.com/addVolunteerSelected?email=${loggedInUser.email}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(volCard[0])
         })
-        history.push(`/selected/${cardId}`)
+        history.push(`/selected`)
     };
     const handleChange = (e) => {
         if (e.target.name === 'name') {

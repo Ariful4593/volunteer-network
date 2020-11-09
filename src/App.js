@@ -32,7 +32,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/selected/:selectedId">
+            <Route path="/selected">
               <Selected></Selected>
             </Route>
             <PrivateRoute path="/register/:cardId">

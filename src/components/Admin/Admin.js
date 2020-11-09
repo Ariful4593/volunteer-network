@@ -6,12 +6,12 @@ import './Admin.css'
 const Admin = () => {
     const [volRegData, setVolRegData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/getVolunteerRegisterInfo')
+        fetch('https://ancient-retreat-90045.herokuapp.com/getVolunteerRegisterInfo')
             .then(res => res.json())
             .then(data => setVolRegData(data))
     })
     const deleteUser = (id) => {
-        fetch(`http://localhost:4000/deleteRegister/${id}`, {
+        fetch(`https://ancient-retreat-90045.herokuapp.com/deleteRegister/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

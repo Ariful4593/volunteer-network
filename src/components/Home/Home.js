@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 const Home = () => {
     const [volunteerData, setVolunteerData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/getDatabase')
+        fetch('https://ancient-retreat-90045.herokuapp.com/getDatabase')
             .then(res => res.json())
             .then(data => setVolunteerData(data))
     }, [])
